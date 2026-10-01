@@ -1,32 +1,17 @@
 {
   "name": "hello-ci",
   "version": "1.0.0",
-  "description": "",
+  "description": "Jenkins CI/CD lab",
   "main": "index.js",
   "scripts": {
     "test": "jest"
   },
-  "jest": {
-    "reporters": [
-      "default",
-      [
-        "jest-junit",
-        {
-          "outputDirectory": ".",
-          "outputName": "junit.xml"
-        }
-      ]
-    ]
+  "dependencies": {
+    "express": "^5.1.0"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "jest": "^30.2.0",
-    "jest-junit": "...",
-    "selenium-webdriver": "..."
-  },
-  "dependencies": {
-    "express": "..."
+    "jest-junit": "^16.0.0",
+    "selenium-webdriver": "^4.35.0"
   }
 }
